@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Quiz Bank"
+parent: Assessments
+nav_order: 2
+permalink: /assessments/quizzes/
+---
+
 # Quiz Bank — AI Course for College Students
 
 This file contains 10 quiz questions per module (100 total) with answer keys for trainer use.

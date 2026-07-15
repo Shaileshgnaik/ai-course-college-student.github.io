@@ -1,3 +1,10 @@
+---
+layout: default
+title: Glossary
+nav_order: 7
+permalink: /glossary/
+---
+
 # Glossary of AI Terms
 
 A reference guide for key terms used throughout this course. Arranged alphabetically.

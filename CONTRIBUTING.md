@@ -1,3 +1,10 @@
+---
+layout: default
+title: Contributing
+nav_order: 10
+permalink: /contributing/
+---
+
 # Contributing
 
 Thank you for your interest in improving this course!

@@ -1,3 +1,11 @@
+---
+layout: default
+title: "01 - Introduction to AI"
+parent: Modules
+nav_order: 1
+permalink: /modules/01-intro/
+---
+
 # Module 01 — Introduction to AI
 
 ## Learning Objectives

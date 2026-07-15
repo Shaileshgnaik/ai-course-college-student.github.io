@@ -1,3 +1,11 @@
+---
+layout: default
+title: "05 - Prompt Engineering"
+parent: Modules
+nav_order: 5
+permalink: /modules/05-prompt-engineering/
+---
+
 # Module 05 — Prompt Engineering
 
 ## Learning Objectives

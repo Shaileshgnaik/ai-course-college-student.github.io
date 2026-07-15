@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Lab 02 - Prompt Engineering"
+parent: Labs
+nav_order: 2
+permalink: /labs/lab-02/
+---
+
 # Lab 02 — Prompt Engineering
 
 **Duration:** 75 minutes

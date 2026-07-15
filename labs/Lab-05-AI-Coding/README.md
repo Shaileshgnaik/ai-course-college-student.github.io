@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Lab 05 - AI Coding"
+parent: Labs
+nav_order: 5
+permalink: /labs/lab-05/
+---
+
 # Lab 05 — AI Coding Assistant
 
 **Duration:** 90 minutes

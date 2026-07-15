@@ -1,3 +1,11 @@
+---
+layout: default
+title: "06 - Microsoft Copilot"
+parent: Modules
+nav_order: 6
+permalink: /modules/06-copilot/
+---
+
 # Module 06 — Microsoft Copilot
 
 ## Learning Objectives

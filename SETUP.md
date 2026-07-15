@@ -1,3 +1,10 @@
+---
+layout: default
+title: Setup Guide
+nav_order: 6
+permalink: /setup/
+---
+
 # Environment Setup Guide
 
 Complete this setup **before your first session**. All tools have a free tier suitable for this course.

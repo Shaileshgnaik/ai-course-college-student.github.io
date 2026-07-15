@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Assignments"
+parent: Assessments
+nav_order: 1
+permalink: /assessments/assignments/
+---
+
 # Assignment Specifications
 
 This file contains the assignment brief for each of the 10 modules.

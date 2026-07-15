@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Career Recommendation System"
+parent: Projects
+nav_order: 3
+permalink: /projects/career-recommendation/
+---
+
 # Project: Career Recommendation System
 
 **Difficulty:** Intermediate

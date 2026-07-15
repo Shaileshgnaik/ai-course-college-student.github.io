@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Lab 04 - Microsoft Copilot"
+parent: Labs
+nav_order: 4
+permalink: /labs/lab-04/
+---
+
 # Lab 04 — Microsoft Copilot
 
 **Duration:** 75 minutes

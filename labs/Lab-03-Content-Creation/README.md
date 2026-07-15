@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Lab 03 - Content Creation"
+parent: Labs
+nav_order: 3
+permalink: /labs/lab-03/
+---
+
 # Lab 03 — AI Content Creation
 
 **Duration:** 60 minutes

@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Lab 06 - Mini Project"
+parent: Labs
+nav_order: 6
+permalink: /labs/lab-06/
+---
+
 # Lab 06 — Mini Project
 
 **Duration:** 2–3 hours (can span multiple sessions)

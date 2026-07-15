@@ -1,3 +1,10 @@
+---
+layout: default
+title: Code of Conduct
+nav_order: 11
+permalink: /code-of-conduct/
+---
+
 # Code of Conduct
 
 ## Our Pledge

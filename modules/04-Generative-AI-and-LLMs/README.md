@@ -1,3 +1,11 @@
+---
+layout: default
+title: "04 - Generative AI & LLMs"
+parent: Modules
+nav_order: 4
+permalink: /modules/04-genai/
+---
+
 # Module 04 — Generative AI and Large Language Models
 
 ## Learning Objectives

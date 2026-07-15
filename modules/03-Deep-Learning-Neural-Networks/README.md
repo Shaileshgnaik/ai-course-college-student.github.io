@@ -1,3 +1,11 @@
+---
+layout: default
+title: "03 - Deep Learning & Neural Networks"
+parent: Modules
+nav_order: 3
+permalink: /modules/03-deep-learning/
+---
+
 # Module 03 — Deep Learning & Neural Networks
 
 ## Learning Objectives

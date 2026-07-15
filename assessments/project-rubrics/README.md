@@ -1,3 +1,11 @@
+---
+layout: default
+title: "Project Rubric"
+parent: Assessments
+nav_order: 3
+permalink: /assessments/project-rubric/
+---
+
 # Project Rubric — Final Project Assessment
 
 **Total marks: 20**

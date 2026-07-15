@@ -1,3 +1,11 @@
+---
+layout: default
+title: "02 - Machine Learning Fundamentals"
+parent: Modules
+nav_order: 2
+permalink: /modules/02-ml/
+---
+
 # Module 02 — Machine Learning Fundamentals
 
 ## Learning Objectives

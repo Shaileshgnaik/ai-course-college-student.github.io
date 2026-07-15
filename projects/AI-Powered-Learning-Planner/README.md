@@ -1,3 +1,11 @@
+---
+layout: default
+title: "AI Learning Planner"
+parent: Projects
+nav_order: 5
+permalink: /projects/learning-planner/
+---
+
 # Project: AI-Powered Learning Planner
 
 **Difficulty:** Beginner to Intermediate
