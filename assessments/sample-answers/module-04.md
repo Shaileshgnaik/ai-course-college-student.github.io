@@ -15,11 +15,10 @@ permalink: /assessments/sample-answers/module-04/
 
 <div class="sample-answer">
 <h4>📄 Model Answer — Study Assistant for Data Structures (CS)</h4>
+</div>
 
 **Subject:** Data Structures and Algorithms
 **Tool used:** ChatGPT (GPT-4o)
-
-</div>
 
 ---
 
@@ -115,6 +114,6 @@ flowchart TD
 
 ---
 
-<div class="tip-box">
+<div class="tip-box" markdown="1">
 <strong>💡 Examiner Tip:</strong> The hallucination check is where most students lose marks — they write "I checked and it was correct" without showing <em>how</em> they verified it. Show your working: quote the claim, explain how you verified it (textbook page, calculation, external source), and state the result.
 </div>

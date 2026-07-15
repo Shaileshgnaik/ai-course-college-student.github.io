@@ -101,6 +101,6 @@ Amazon should have conducted a **bias audit** of the training data before buildi
 
 ---
 
-<div class="tip-box">
+<div class="tip-box" markdown="1">
 <strong>💡 Examiner Tip:</strong> The strongest case study answers name the responsible AI principle being violated (fairness, transparency, accountability) rather than just saying "it was wrong." Connect your analysis to a framework. The recommendations section should be specific and actionable — "they should have been more careful" scores 0; "mandatory bias testing against protected characteristics before deployment" scores 3.
 </div>

@@ -15,6 +15,7 @@ permalink: /assessments/sample-answers/module-01/
 
 <div class="sample-answer">
 <h4>📄 Model Answer — Software Engineering Student</h4>
+</div>
 
 **Career field:** Software Engineering
 
@@ -33,8 +34,6 @@ I predict that autonomous AI agents will be capable of completing entire develop
 I see this primarily as an opportunity. AI automates the repetitive, mechanical parts of coding — scaffolding, documentation, simple bug fixes. This frees engineers to focus on architecture, product thinking, and the creative problem-solving that AI still cannot replicate. However, it is a genuine threat to developers who do not adapt — those who resist learning to work effectively with AI tools will find themselves less competitive.
 
 **Skill I will develop:** I will deepen my knowledge of prompt engineering for code generation, and learn to critically evaluate AI-generated code for correctness, security, and efficiency.
-
-</div>
 
 ---
 
@@ -77,6 +76,6 @@ graph TD
 
 ---
 
-<div class="tip-box">
+<div class="tip-box" markdown="1">
 <strong>💡 Examiner Tip:</strong> The strongest answers name specific AI tools (not just "AI in general"), give a reasoned personal stance, and connect the future prediction to evidence — a current prototype, research paper, or product announcement. Generic answers that say "AI will change everything" without specifics score in the C range.
 </div>

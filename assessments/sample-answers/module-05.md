@@ -141,6 +141,6 @@ Ask the AI to reason step by step — much better for analysis tasks.
 
 ---
 
-<div class="tip-box">
+<div class="tip-box" markdown="1">
 <strong>💡 Examiner Tip:</strong> The cheat sheet should be discipline-specific — a business student's prompts should look different from an engineering student's. Generic prompts like "explain this concept" with no field context score in the C range. The best answers include prompts you actually tested and refined based on the output quality.
 </div>

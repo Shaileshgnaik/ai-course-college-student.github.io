@@ -15,10 +15,9 @@ permalink: /assessments/sample-answers/module-03/
 
 <div class="sample-answer">
 <h4>📄 Model Answer — How a Transformer Processes "The cat sat on the mat"</h4>
+</div>
 
 A Transformer model processes text in four main stages: tokenisation, embedding, attention, and output generation. Here is how the sentence **"The cat sat on the mat"** flows through the model.
-
-</div>
 
 ---
 
@@ -141,6 +140,6 @@ flowchart LR
 
 ---
 
-<div class="tip-box">
+<div class="tip-box" markdown="1">
 <strong>💡 Examiner Tip:</strong> Many students draw a generic "input → hidden layers → output" neural network diagram and call it a Transformer. That scores 2/4 for the diagram at best. The Transformer is distinguished by the <em>attention mechanism</em> — your explainer must show how tokens relate to each other, not just how data flows through layers.
 </div>

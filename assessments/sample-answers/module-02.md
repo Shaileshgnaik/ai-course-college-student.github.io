@@ -13,15 +13,17 @@ permalink: /assessments/sample-answers/module-02/
 
 ---
 
-<div class="sample-answer">
+<div class="sample-answer" markdown="1">
 <h4>📄 Model Answer — Student Performance Dataset</h4>
 
-**Dataset:** [Student Performance Dataset](https://www.kaggle.com/datasets/larsen0966/student-performance-data-set) — UCI Machine Learning Repository
-**Source:** Kaggle / UCI | **Rows:** 649 students | **Columns:** 33 attributes
+**Dataset:** Student Performance Dataset — UCI Machine Learning Repository
+
+**Source:** Kaggle / UCI &nbsp;|&nbsp; **Rows:** 649 students &nbsp;|&nbsp; **Columns:** 33 attributes
+</div>
 
 ---
 
-**Features (inputs):**
+### Features (Inputs)
 
 | Feature | Type | Description |
 |---------|------|-------------|
@@ -36,23 +38,23 @@ permalink: /assessments/sample-answers/module-02/
 
 ---
 
-**ML Problem Type:** Regression — predicting a continuous numeric grade.
+### ML Problem Type
+
+**Regression** — predicting a continuous numeric grade.
 
 Could also be framed as **classification** (pass/fail, or grade band A/B/C/D/F) depending on the use case.
 
 ---
 
-**Real-World Application:**
+### Real-World Application
 
 An early warning system for college tutors — flagging students at risk of failing before final exams so targeted support can be offered. If the model predicts a student will score below 10, a tutor is automatically notified to schedule a check-in.
 
 ---
 
-**Bias Risk:**
+### Bias Risk
 
 Parental education level is a significant predictor in this dataset. Students whose parents have lower education levels are statistically more likely to receive lower predictions — not because of their own ability, but because of socioeconomic factors beyond their control. A model trained on this data could perpetuate disadvantage by routing fewer resources to students who need the most support.
-
-</div>
 
 ---
 
@@ -93,11 +95,11 @@ flowchart TD
 
 ```mermaid
 graph LR
-    subgraph Supervised["🏷️ Supervised Learning"]
+    subgraph Supervised["Supervised Learning"]
         S1[Labelled data] --> S2[Model learns mapping]
         S2 --> S3[Predict label for new data]
     end
-    subgraph Unsupervised["🔍 Unsupervised Learning"]
+    subgraph Unsupervised["Unsupervised Learning"]
         U1[Unlabelled data] --> U2[Model finds patterns]
         U2 --> U3[Discover clusters or structure]
     end
@@ -109,6 +111,6 @@ graph LR
 
 ---
 
-<div class="tip-box">
-<strong>💡 Examiner Tip:</strong> Many students correctly identify the ML type but fail to explain <em>why</em>. Always justify — "this is regression <em>because</em> the output is a continuous number, not a category." The bias risk answer should name a specific feature, not just say "the data could be biased."
+<div class="tip-box" markdown="1">
+**💡 Examiner Tip:** Many students correctly identify the ML type but fail to explain *why*. Always justify — "this is regression *because* the output is a continuous number, not a category." The bias risk answer should name a specific feature, not just say "the data could be biased."
 </div>

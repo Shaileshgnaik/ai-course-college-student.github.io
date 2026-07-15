@@ -45,7 +45,7 @@ graph LR
 - Intro deck has a clear personal brand, not just a list of facts
 - Student documents which parts were AI-generated and which were personalised
 
-<div class="tip-box">
+<div class="tip-box" markdown="1">
 <strong>💡 Examiner Tip:</strong> The most common weakness is submitting verbatim Copilot output without personalisation. If the cover letter could belong to any student, it scores in the C range. Personalisation is what separates a B from an A.
 </div>
 
@@ -77,7 +77,7 @@ flowchart TD
 - What did you learn from reviewing the AI's code?
 - Would you have built this without AI assistance? How long would it have taken?
 
-<div class="tip-box">
+<div class="tip-box" markdown="1">
 <strong>💡 Examiner Tip:</strong> A student who submits Copilot-generated code with a thoughtful reflection that identifies 3 specific errors they caught scores higher than a student who writes everything manually but submits no reflection. The assignment measures AI literacy, not just coding ability.
 </div>
 
@@ -105,7 +105,7 @@ graph TD
 **Example of a weak recommendation (scores 0/2):**
 > "Students should learn about AI and prepare for changes in their field."
 
-<div class="tip-box">
+<div class="tip-box" markdown="1">
 <strong>💡 Examiner Tip:</strong> The recommendation is the most valuable section to the student's future employer — it shows independent thinking. Vague advice scores 0. Specific, evidenced recommendations (name the course, the certification, the skill) score 2/2.
 </div>
 
@@ -151,6 +151,6 @@ AI & Productivity Tools
 • Certifications: Microsoft AI-900 (in progress)
 ```
 
-<div class="tip-box">
+<div class="tip-box" markdown="1">
 <strong>💡 Examiner Tip:</strong> "Familiar with AI tools" is the weakest possible AI skills entry — every student can write that. Name the specific tools, name the techniques, and where possible name a project where you used them. Recruiters scan résumés in 6 seconds — specificity is what stops the scroll.
 </div>
