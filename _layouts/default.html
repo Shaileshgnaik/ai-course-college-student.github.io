@@ -381,5 +381,23 @@
     <p>AI Course for College Students &copy; 2026 <a href="https://github.com/{{ site.github_username }}">{{ site.author }}</a> &mdash; Released under the <a href="{{ '/LICENSE' | relative_url }}">MIT License</a></p>
   </footer>
 
+  <!-- Mermaid.js for diagrams -->
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script>
+    mermaid.initialize({ startOnLoad: true, theme: 'default', themeVariables: {
+      primaryColor: '#ddf4ff', primaryBorderColor: '#0969da', primaryTextColor: '#24292f',
+      lineColor: '#57606a', secondaryColor: '#f6f8fa', tertiaryColor: '#fff8c5'
+    }});
+  </script>
+  <style>
+    .mermaid { margin: 20px 0; text-align: center; }
+    .mermaid svg { max-width: 100%; border-radius: 8px; }
+    .diagram-caption { text-align: center; font-size: 13px; color: #57606a; margin: -12px 0 20px; font-style: italic; }
+    .sample-answer { background: #f6f8fa; border: 1px solid #d0d7de; border-radius: 8px; padding: 20px 24px; margin: 20px 0; }
+    .sample-answer h4 { margin: 0 0 12px; color: #0969da; font-size: 14px; text-transform: uppercase; letter-spacing: 0.5px; }
+    .marks-badge { display: inline-block; background: #0969da; color: white; font-size: 12px; font-weight: 600; padding: 2px 8px; border-radius: 12px; margin-left: 8px; vertical-align: middle; }
+    .tip-box { background: #fff8c5; border: 1px solid #d4a72c; border-radius: 6px; padding: 12px 16px; margin: 16px 0; font-size: 14px; }
+    .tip-box strong { color: #7d4e00; }
+  </style>
 </body>
 </html>
