@@ -22,18 +22,18 @@ permalink: /
 
 ## What You'll Learn
 
-| ✅ | Topic |
+| | Topic |
 |----|-------|
-| ✅ | AI fundamentals, history, and the current landscape |
-| ✅ | Machine Learning — supervised, unsupervised, reinforcement |
-| ✅ | Deep Learning, Neural Networks, and Transformers |
-| ✅ | Generative AI and Large Language Models |
-| ✅ | Prompt Engineering — zero-shot, few-shot, chain-of-thought |
-| ✅ | Microsoft Copilot — Word, Excel, PowerPoint, Teams |
-| ✅ | AI for Programming — GitHub Copilot, Python, JavaScript |
-| ✅ | Responsible AI — ethics, bias, fairness, governance |
-| ✅ | Future of AI — agents, AGI, industry disruption |
-| ✅ | AI Careers and personal learning roadmap |
+| → | AI fundamentals, history, and the current landscape |
+| → | Machine Learning — supervised, unsupervised, reinforcement |
+| → | Deep Learning, Neural Networks, and Transformers |
+| → | Generative AI and Large Language Models |
+| → | Prompt Engineering — zero-shot, few-shot, chain-of-thought |
+| → | Microsoft Copilot — Word, Excel, PowerPoint, Teams |
+| → | AI for Programming — GitHub Copilot, Python, JavaScript |
+| → | Responsible AI — ethics, bias, fairness, governance |
+| → | Future of AI — agents, AGI, industry disruption |
+| → | AI Careers and personal learning roadmap |
 
 ---
 

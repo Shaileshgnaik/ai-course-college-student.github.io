@@ -197,6 +197,30 @@
     tr:nth-child(even) td { background: #f6f8fa; }
     tr:hover td { background: #ddf4ff; }
 
+    /* Arrow bullet column — first td that contains only → */
+    td:first-child:not(:only-child) {
+      width: 32px;
+      text-align: center;
+      color: transparent;
+      font-size: 0;
+      border-right: none;
+      padding: 9px 0 9px 16px;
+    }
+    td:first-child:not(:only-child)::before {
+      content: '';
+      display: inline-block;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #0969da;
+      vertical-align: middle;
+    }
+    /* hide the → character but keep the ::before dot */
+    td:first-child:not(:only-child) {
+      font-size: 0;
+      color: transparent;
+    }
+
     /* ── Code ── */
     pre {
       background: #f6f8fa;
