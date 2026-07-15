@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "08 - Responsible AI"
-parent: Modules
-nav_order: 8
 permalink: /modules/08-responsible-ai/
 ---
 

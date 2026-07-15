@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "Quiz Bank"
-parent: Assessments
-nav_order: 2
 permalink: /assessments/quizzes/
 ---
 

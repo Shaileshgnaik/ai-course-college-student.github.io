@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "Lab 01 - AI Essentials"
-parent: Labs
-nav_order: 1
 permalink: /labs/lab-01/
 ---
 

@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "Assignments"
-parent: Assessments
-nav_order: 1
 permalink: /assessments/assignments/
 ---
 

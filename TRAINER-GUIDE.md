@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Trainer Guide
-nav_order: 8
 permalink: /trainer-guide/
 ---
 

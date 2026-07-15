@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "Lab 06 - Mini Project"
-parent: Labs
-nav_order: 6
 permalink: /labs/lab-06/
 ---
 

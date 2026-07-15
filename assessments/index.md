@@ -1,8 +1,6 @@
 ---
 layout: default
 title: Assessments
-nav_order: 5
-has_children: true
 permalink: /assessments/
 ---
 

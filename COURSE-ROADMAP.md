@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Course Roadmap
-nav_order: 9
 permalink: /course-roadmap/
 ---
 

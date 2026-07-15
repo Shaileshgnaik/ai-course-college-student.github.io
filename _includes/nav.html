@@ -1,0 +1,58 @@
+<h3>🏠 Course</h3>
+<ul>
+  <li><a href="{{ '/' | relative_url }}" {% if page.url == '/' or page.url == '/index.html' %}class="active"{% endif %}>Home</a></li>
+  <li><a href="{{ '/course-roadmap/' | relative_url }}" {% if page.url contains 'course-roadmap' %}class="active"{% endif %}>📅 Course Roadmap</a></li>
+  <li><a href="{{ '/setup/' | relative_url }}" {% if page.url contains 'setup' %}class="active"{% endif %}>⚙️ Setup Guide</a></li>
+  <li><a href="{{ '/glossary/' | relative_url }}" {% if page.url contains 'glossary' %}class="active"{% endif %}>📖 Glossary</a></li>
+</ul>
+
+<h3>📚 Modules</h3>
+<ul>
+  <li><a href="{{ '/modules/' | relative_url }}" {% if page.url == '/modules/' %}class="active"{% endif %}>All Modules</a></li>
+  <li><a href="{{ '/modules/01-intro/' | relative_url }}" {% if page.url contains '01-intro' %}class="active"{% endif %}>01 · Introduction to AI</a></li>
+  <li><a href="{{ '/modules/02-ml/' | relative_url }}" {% if page.url contains '02-ml' %}class="active"{% endif %}>02 · Machine Learning</a></li>
+  <li><a href="{{ '/modules/03-deep-learning/' | relative_url }}" {% if page.url contains '03-deep' %}class="active"{% endif %}>03 · Deep Learning</a></li>
+  <li><a href="{{ '/modules/04-genai/' | relative_url }}" {% if page.url contains '04-genai' %}class="active"{% endif %}>04 · Generative AI & LLMs</a></li>
+  <li><a href="{{ '/modules/05-prompt-engineering/' | relative_url }}" {% if page.url contains '05-prompt' %}class="active"{% endif %}>05 · Prompt Engineering</a></li>
+  <li><a href="{{ '/modules/06-copilot/' | relative_url }}" {% if page.url contains '06-copilot' %}class="active"{% endif %}>06 · Microsoft Copilot</a></li>
+  <li><a href="{{ '/modules/07-ai-programming/' | relative_url }}" {% if page.url contains '07-ai-prog' %}class="active"{% endif %}>07 · AI for Programming</a></li>
+  <li><a href="{{ '/modules/08-responsible-ai/' | relative_url }}" {% if page.url contains '08-responsible' %}class="active"{% endif %}>08 · Responsible AI</a></li>
+  <li><a href="{{ '/modules/09-future-ai/' | relative_url }}" {% if page.url contains '09-future' %}class="active"{% endif %}>09 · Future of AI</a></li>
+  <li><a href="{{ '/modules/10-careers/' | relative_url }}" {% if page.url contains '10-careers' %}class="active"{% endif %}>10 · AI Careers</a></li>
+</ul>
+
+<h3>🧪 Labs</h3>
+<ul>
+  <li><a href="{{ '/labs/' | relative_url }}" {% if page.url == '/labs/' %}class="active"{% endif %}>All Labs</a></li>
+  <li><a href="{{ '/labs/lab-01/' | relative_url }}" {% if page.url contains 'lab-01' %}class="active"{% endif %}>Lab 01 · AI Essentials</a></li>
+  <li><a href="{{ '/labs/lab-02/' | relative_url }}" {% if page.url contains 'lab-02' %}class="active"{% endif %}>Lab 02 · Prompt Engineering</a></li>
+  <li><a href="{{ '/labs/lab-03/' | relative_url }}" {% if page.url contains 'lab-03' %}class="active"{% endif %}>Lab 03 · Content Creation</a></li>
+  <li><a href="{{ '/labs/lab-04/' | relative_url }}" {% if page.url contains 'lab-04' %}class="active"{% endif %}>Lab 04 · Microsoft Copilot</a></li>
+  <li><a href="{{ '/labs/lab-05/' | relative_url }}" {% if page.url contains 'lab-05' %}class="active"{% endif %}>Lab 05 · AI Coding</a></li>
+  <li><a href="{{ '/labs/lab-06/' | relative_url }}" {% if page.url contains 'lab-06' %}class="active"{% endif %}>Lab 06 · Mini Project</a></li>
+</ul>
+
+<h3>🏆 Projects</h3>
+<ul>
+  <li><a href="{{ '/projects/' | relative_url }}" {% if page.url == '/projects/' %}class="active"{% endif %}>All Projects</a></li>
+  <li><a href="{{ '/projects/ai-resume-builder/' | relative_url }}" {% if page.url contains 'ai-resume' %}class="active"{% endif %}>Resume Builder</a></li>
+  <li><a href="{{ '/projects/student-study-assistant/' | relative_url }}" {% if page.url contains 'study-assistant' %}class="active"{% endif %}>Study Assistant</a></li>
+  <li><a href="{{ '/projects/career-recommendation/' | relative_url }}" {% if page.url contains 'career-rec' %}class="active"{% endif %}>Career Recommender</a></li>
+  <li><a href="{{ '/projects/campus-chatbot/' | relative_url }}" {% if page.url contains 'campus-chat' %}class="active"{% endif %}>Campus Chatbot</a></li>
+  <li><a href="{{ '/projects/learning-planner/' | relative_url }}" {% if page.url contains 'learning-planner' %}class="active"{% endif %}>Learning Planner</a></li>
+</ul>
+
+<h3>📝 Assessments</h3>
+<ul>
+  <li><a href="{{ '/assessments/' | relative_url }}" {% if page.url == '/assessments/' %}class="active"{% endif %}>Overview</a></li>
+  <li><a href="{{ '/assessments/assignments/' | relative_url }}" {% if page.url contains 'assignments' %}class="active"{% endif %}>Assignments</a></li>
+  <li><a href="{{ '/assessments/quizzes/' | relative_url }}" {% if page.url contains 'quizzes' %}class="active"{% endif %}>Quiz Bank</a></li>
+  <li><a href="{{ '/assessments/project-rubric/' | relative_url }}" {% if page.url contains 'rubric' %}class="active"{% endif %}>Project Rubric</a></li>
+</ul>
+
+<h3>📋 Reference</h3>
+<ul>
+  <li><a href="{{ '/trainer-guide/' | relative_url }}" {% if page.url contains 'trainer' %}class="active"{% endif %}>🎓 Trainer Guide</a></li>
+  <li><a href="{{ '/contributing/' | relative_url }}" {% if page.url contains 'contributing' %}class="active"{% endif %}>🤝 Contributing</a></li>
+  <li><a href="{{ '/code-of-conduct/' | relative_url }}" {% if page.url contains 'code-of-conduct' %}class="active"{% endif %}>📜 Code of Conduct</a></li>
+</ul>

@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "Student Study Assistant"
-parent: Projects
-nav_order: 2
 permalink: /projects/student-study-assistant/
 ---
 

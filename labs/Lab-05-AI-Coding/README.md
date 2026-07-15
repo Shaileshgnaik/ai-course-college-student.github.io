@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "Lab 05 - AI Coding"
-parent: Labs
-nav_order: 5
 permalink: /labs/lab-05/
 ---
 

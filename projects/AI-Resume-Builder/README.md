@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "AI Resume Builder"
-parent: Projects
-nav_order: 1
 permalink: /projects/ai-resume-builder/
 ---
 

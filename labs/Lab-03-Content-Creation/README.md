@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "Lab 03 - Content Creation"
-parent: Labs
-nav_order: 3
 permalink: /labs/lab-03/
 ---
 

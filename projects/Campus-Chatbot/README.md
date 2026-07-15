@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "Campus Chatbot"
-parent: Projects
-nav_order: 4
 permalink: /projects/campus-chatbot/
 ---
 

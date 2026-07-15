@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "09 - Future of AI"
-parent: Modules
-nav_order: 9
 permalink: /modules/09-future-ai/
 ---
 

@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "07 - AI for Programming"
-parent: Modules
-nav_order: 7
 permalink: /modules/07-ai-programming/
 ---
 

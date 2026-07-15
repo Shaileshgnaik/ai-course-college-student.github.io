@@ -1,8 +1,6 @@
 ---
 layout: default
 title: "10 - AI Careers & Roadmap"
-parent: Modules
-nav_order: 10
 permalink: /modules/10-careers/
 ---
 
