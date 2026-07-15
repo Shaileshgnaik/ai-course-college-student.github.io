@@ -67,41 +67,68 @@ No prior AI experience is required.
 # 🏗️ Repository Structure
 
 ```text
-AI-Course-College-Students/
+ai-course-college-student.github.io/
 │
 ├── README.md
+├── COURSE-ROADMAP.md
+├── TRAINER-GUIDE.md
+├── SETUP.md
+├── GLOSSARY.md
+├── CODE-OF-CONDUCT.md
+├── CONTRIBUTING.md
+├── LICENSE
+│
+├── slides/
 │
 ├── modules/
-│   ├── 01-AI-Fundamentals
-│   ├── 02-Machine-Learning
-│   ├── 03-Deep-Learning
-│   ├── 04-Generative-AI
-│   ├── 05-Prompt-Engineering
-│   ├── 06-Microsoft-Copilot
-│   ├── 07-AI-for-Programming
-│   ├── 08-Responsible-AI
-│   ├── 09-Future-of-AI
-│   └── 10-AI-Careers
+│   ├── 01-Introduction-to-AI/
+│   │   ├── README.md
+│   │   ├── slides/
+│   │   ├── exercises/
+│   │   ├── assignments/
+│   │   └── resources/
+│   ├── 02-Machine-Learning-Fundamentals/
+│   ├── 03-Deep-Learning-Neural-Networks/
+│   ├── 04-Generative-AI-and-LLMs/
+│   ├── 05-Prompt-Engineering/
+│   ├── 06-Microsoft-Copilot/
+│   ├── 07-AI-for-Programming/
+│   ├── 08-Responsible-AI/
+│   ├── 09-Future-of-AI/
+│   └── 10-AI-Careers-and-Roadmap/
 │
 ├── labs/
-│   ├── Lab-01-Prompt-Engineering
-│   ├── Lab-02-Content-Generation
-│   ├── Lab-03-Microsoft-Copilot
-│   └── Lab-04-AI-Coding
+│   ├── Lab-01-AI-Essentials/
+│   ├── Lab-02-Prompt-Engineering/
+│   ├── Lab-03-Content-Creation/
+│   ├── Lab-04-Microsoft-Copilot/
+│   ├── Lab-05-AI-Coding/
+│   └── Lab-06-Mini-Project/
 │
 ├── projects/
-│   ├── Study-Assistant
-│   ├── Resume-Builder
-│   ├── Career-Advisor
-│   └── Campus-Chatbot
+│   ├── AI-Resume-Builder/
+│   ├── Student-Study-Assistant/
+│   ├── Career-Recommendation-System/
+│   ├── Campus-Chatbot/
+│   └── AI-Powered-Learning-Planner/
+│
+├── datasets/
+│   ├── student-performance/
+│   ├── customer-segmentation/
+│   └── sample-datasets/
 │
 ├── resources/
-│   ├── datasets
-│   ├── references
-│   ├── videos
-│   └── templates
+│   ├── cheat-sheets/
+│   ├── certification-guides/
+│   ├── ebooks/
+│   ├── prompt-library/
+│   └── sample-presentations/
 │
-└── slides/
+└── assessments/
+    ├── quizzes/
+    ├── assignments/
+    ├── project-rubrics/
+    └── certificates/
 ```
 
 ---
