@@ -4,31 +4,29 @@ title: Home
 permalink: /
 ---
 
-# AI Course for College Students
-
-**From AI Fundamentals to Generative AI and Microsoft Copilot**
-
-<div class="badges">
-<img src="https://img.shields.io/badge/modules-10-blue" alt="10 modules">
-<img src="https://img.shields.io/badge/labs-6-green" alt="6 labs">
-<img src="https://img.shields.io/badge/projects-5-orange" alt="5 projects">
-<img src="https://img.shields.io/badge/license-MIT-lightgrey" alt="MIT license">
-<img src="https://img.shields.io/badge/Microsoft-Copilot-742774" alt="Microsoft Copilot">
+<div class="hero">
+  <h1>🚀 AI Course for College Students</h1>
+  <p>From AI Fundamentals to Generative AI and Microsoft Copilot — a hands-on program for students across all disciplines.</p>
+  <a href="/ai-course-college-student.github.io/modules/" class="btn btn-primary">Browse Modules</a>
+  <a href="/ai-course-college-student.github.io/setup/" class="btn btn-secondary">Setup Guide</a>
+  <a href="https://github.com/Shaileshgnaik/ai-course-college-student.github.io" class="btn btn-secondary" target="_blank">GitHub ↗</a>
 </div>
 
-A comprehensive, hands-on AI course designed for **college students across all disciplines** — no prior AI experience required.
-
-> **New here?** Start with the [Setup Guide](/ai-course-college-student.github.io/setup/) to get your tools ready before the first session.
-
----
+<div class="badges">
+  <img src="https://img.shields.io/badge/modules-10-0969da" alt="10 modules">
+  <img src="https://img.shields.io/badge/labs-6-2da44e" alt="6 labs">
+  <img src="https://img.shields.io/badge/projects-5-e3b341" alt="5 projects">
+  <img src="https://img.shields.io/badge/license-MIT-8250df" alt="MIT">
+  <img src="https://img.shields.io/badge/Microsoft-Copilot-742774" alt="Copilot">
+</div>
 
 ## What You'll Learn
 
 | ✅ | Topic |
 |----|-------|
-| ✅ | AI fundamentals, history, and key concepts |
+| ✅ | AI fundamentals, history, and the current landscape |
 | ✅ | Machine Learning — supervised, unsupervised, reinforcement |
-| ✅ | Deep Learning and Neural Networks |
+| ✅ | Deep Learning, Neural Networks, and Transformers |
 | ✅ | Generative AI and Large Language Models |
 | ✅ | Prompt Engineering — zero-shot, few-shot, chain-of-thought |
 | ✅ | Microsoft Copilot — Word, Excel, PowerPoint, Teams |
@@ -43,52 +41,52 @@ A comprehensive, hands-on AI course designed for **college students across all d
 
 <div class="module-grid">
   <div class="module-card">
-    <div class="module-num">🤖</div>
+    <div class="num">🤖</div>
     <a href="/ai-course-college-student.github.io/modules/01-intro/">01 — Introduction to AI</a>
     <p>History, types, real-world applications</p>
   </div>
   <div class="module-card">
-    <div class="module-num">🧠</div>
+    <div class="num">🧠</div>
     <a href="/ai-course-college-student.github.io/modules/02-ml/">02 — Machine Learning</a>
-    <p>Supervised, unsupervised, reinforcement learning</p>
+    <p>Supervised, unsupervised, reinforcement</p>
   </div>
   <div class="module-card">
-    <div class="module-num">🔬</div>
+    <div class="num">🔬</div>
     <a href="/ai-course-college-student.github.io/modules/03-deep-learning/">03 — Deep Learning</a>
     <p>CNNs, RNNs, Transformers, GPUs</p>
   </div>
   <div class="module-card">
-    <div class="module-num">✨</div>
+    <div class="num">✨</div>
     <a href="/ai-course-college-student.github.io/modules/04-genai/">04 — Generative AI & LLMs</a>
     <p>GPT, Claude, Gemini, tokens, hallucinations</p>
   </div>
   <div class="module-card">
-    <div class="module-num">💬</div>
+    <div class="num">💬</div>
     <a href="/ai-course-college-student.github.io/modules/05-prompt-engineering/">05 — Prompt Engineering</a>
     <p>Techniques, patterns, iterative refinement</p>
   </div>
   <div class="module-card">
-    <div class="module-num">💼</div>
+    <div class="num">💼</div>
     <a href="/ai-course-college-student.github.io/modules/06-copilot/">06 — Microsoft Copilot</a>
     <p>Word, Excel, PowerPoint, Teams</p>
   </div>
   <div class="module-card">
-    <div class="module-num">💻</div>
+    <div class="num">💻</div>
     <a href="/ai-course-college-student.github.io/modules/07-ai-programming/">07 — AI for Programming</a>
     <p>GitHub Copilot, Python, JavaScript</p>
   </div>
   <div class="module-card">
-    <div class="module-num">⚖️</div>
+    <div class="num">⚖️</div>
     <a href="/ai-course-college-student.github.io/modules/08-responsible-ai/">08 — Responsible AI</a>
     <p>Ethics, bias, fairness, governance</p>
   </div>
   <div class="module-card">
-    <div class="module-num">🚀</div>
+    <div class="num">🚀</div>
     <a href="/ai-course-college-student.github.io/modules/09-future-ai/">09 — Future of AI</a>
     <p>AGI, agents, industry disruption</p>
   </div>
   <div class="module-card">
-    <div class="module-num">🎯</div>
+    <div class="num">🎯</div>
     <a href="/ai-course-college-student.github.io/modules/10-careers/">10 — AI Careers</a>
     <p>Certifications, resume, roadmap</p>
   </div>
@@ -124,7 +122,7 @@ A comprehensive, hands-on AI course designed for **college students across all d
 ## Who Is This For?
 
 - Engineering, BCA/MCA, B.Sc CS students
-- Business and Management students
+- Business and Management students  
 - Faculty members and trainers
 - Anyone curious about AI — **no prior experience needed**
 

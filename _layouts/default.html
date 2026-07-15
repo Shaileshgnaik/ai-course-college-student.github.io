@@ -1,160 +1,326 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
-    <meta name="description" content="{{ page.description | default: site.description }}">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <style>
-      /* ── Tactile overrides ── */
-      body { font-family: 'Segoe UI', Arial, sans-serif; }
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+  <style>
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #24292f;
+      background: #ffffff;
+    }
 
-      #header_wrap { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%); }
-      #header_wrap .inner { padding: 20px 10px 16px; }
+    /* ── Top Header Bar ── */
+    .site-header {
+      background: #24292f;
+      border-bottom: 1px solid #30363d;
+      padding: 0 24px;
+      height: 56px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .site-header .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: #f0f6fc;
+      font-weight: 600;
+      font-size: 15px;
+    }
+    .site-header .logo svg { fill: #f0f6fc; }
+    .header-links { display: flex; gap: 16px; }
+    .header-links a {
+      color: #8b949e;
+      text-decoration: none;
+      font-size: 14px;
+      padding: 6px 8px;
+      border-radius: 6px;
+      transition: color 0.15s, background 0.15s;
+    }
+    .header-links a:hover { color: #f0f6fc; background: #30363d; }
 
-      #project_title {
-        font-size: 2em;
-        font-weight: 700;
-        letter-spacing: 0.5px;
-        text-shadow: none;
-        margin-bottom: 4px;
-      }
-      #project_tagline {
-        font-size: 1em;
-        font-weight: 300;
-        opacity: 0.85;
-      }
+    /* ── Page Layout ── */
+    .page-wrapper {
+      display: flex;
+      max-width: 1400px;
+      margin: 0 auto;
+      min-height: calc(100vh - 56px);
+    }
 
-      /* Sidebar nav */
-      #sidebar {
-        background: #f8f9fa;
-        border-right: 1px solid #e1e4e8;
-        padding: 24px 16px;
-        min-height: 100vh;
-        width: 240px;
-        float: left;
-        box-sizing: border-box;
-      }
-      #sidebar h3 {
-        font-size: 0.7em;
-        font-weight: 700;
-        text-transform: uppercase;
-        letter-spacing: 1px;
-        color: #586069;
-        margin: 20px 0 6px;
-        padding-bottom: 4px;
-        border-bottom: 1px solid #e1e4e8;
-      }
-      #sidebar h3:first-child { margin-top: 0; }
-      #sidebar ul {
-        list-style: none;
-        padding: 0;
-        margin: 0 0 8px;
-      }
-      #sidebar ul li { margin: 2px 0; }
-      #sidebar ul li a {
-        display: block;
-        padding: 5px 8px;
-        font-size: 0.85em;
-        color: #24292e;
-        text-decoration: none;
-        border-radius: 4px;
-        transition: background 0.15s;
-      }
-      #sidebar ul li a:hover { background: #e1e4e8; color: #0f3460; }
-      #sidebar ul li a.active { background: #0f3460; color: #fff; font-weight: 600; }
+    /* ── Sidebar ── */
+    .sidebar {
+      width: 260px;
+      min-width: 260px;
+      border-right: 1px solid #d0d7de;
+      padding: 24px 0;
+      position: sticky;
+      top: 56px;
+      height: calc(100vh - 56px);
+      overflow-y: auto;
+      background: #f6f8fa;
+    }
+    .sidebar-section { margin-bottom: 8px; }
+    .sidebar-section-title {
+      display: block;
+      padding: 6px 16px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #57606a;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-top: 16px;
+    }
+    .sidebar-section-title:first-child { margin-top: 0; }
+    .sidebar nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .sidebar nav ul li a {
+      display: flex;
+      align-items: center;
+      padding: 5px 16px 5px 20px;
+      font-size: 14px;
+      color: #24292f;
+      text-decoration: none;
+      border-left: 2px solid transparent;
+      transition: background 0.1s, border-color 0.1s;
+      line-height: 1.4;
+    }
+    .sidebar nav ul li a:hover {
+      background: #eaeef2;
+      color: #0969da;
+    }
+    .sidebar nav ul li a.active {
+      border-left-color: #0969da;
+      color: #0969da;
+      background: #ddf4ff;
+      font-weight: 600;
+    }
 
-      /* Main content */
-      #main_content_wrap {
-        margin-left: 256px;
-      }
-      #main_content {
-        padding: 28px 36px;
-        max-width: 860px;
-      }
+    /* ── Main Content ── */
+    .main-content {
+      flex: 1;
+      min-width: 0;
+      padding: 32px 48px;
+      max-width: 900px;
+    }
 
-      /* Responsive */
-      @media (max-width: 720px) {
-        #sidebar { display: none; }
-        #main_content_wrap { margin-left: 0; }
-        #main_content { padding: 20px 16px; }
-      }
+    /* ── Typography ── */
+    h1 {
+      font-size: 2em;
+      font-weight: 600;
+      border-bottom: 1px solid #d0d7de;
+      padding-bottom: 12px;
+      margin-bottom: 16px;
+      color: #24292f;
+    }
+    h2 {
+      font-size: 1.4em;
+      font-weight: 600;
+      border-bottom: 1px solid #eaeef2;
+      padding-bottom: 8px;
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+    h3 { font-size: 1.15em; font-weight: 600; margin-top: 24px; }
+    h4 { font-size: 1em; font-weight: 600; margin-top: 16px; }
+    a { color: #0969da; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    p { margin: 0 0 16px; }
 
-      /* Tables */
-      table { border-collapse: collapse; width: 100%; margin: 16px 0; }
-      th { background: #0f3460; color: #fff; padding: 10px 12px; text-align: left; font-size: 0.85em; }
-      td { padding: 9px 12px; border-bottom: 1px solid #e1e4e8; font-size: 0.9em; }
-      tr:hover td { background: #f6f8fa; }
+    /* ── Tables ── */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 16px 0 24px;
+      font-size: 14px;
+      display: block;
+      overflow-x: auto;
+    }
+    thead tr { background: #f6f8fa; }
+    th {
+      padding: 10px 16px;
+      font-weight: 600;
+      text-align: left;
+      border: 1px solid #d0d7de;
+      color: #24292f;
+      font-size: 13px;
+    }
+    td {
+      padding: 9px 16px;
+      border: 1px solid #d0d7de;
+      vertical-align: top;
+    }
+    tr:nth-child(even) td { background: #f6f8fa; }
+    tr:hover td { background: #ddf4ff; }
 
-      /* Code blocks */
-      pre { background: #1e1e1e; color: #d4d4d4; border-radius: 6px; padding: 16px; overflow-x: auto; }
-      code { font-family: 'Consolas', 'Monaco', monospace; font-size: 0.88em; }
-      p > code, li > code { background: #f0f0f0; color: #c7254e; padding: 1px 5px; border-radius: 3px; }
+    /* ── Code ── */
+    pre {
+      background: #f6f8fa;
+      border: 1px solid #d0d7de;
+      border-radius: 6px;
+      padding: 16px;
+      overflow-x: auto;
+      font-size: 13px;
+      line-height: 1.6;
+      margin: 16px 0;
+    }
+    code {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 85%;
+    }
+    p code, li code, td code {
+      background: #eaeef2;
+      border-radius: 4px;
+      padding: 2px 6px;
+      color: #cf222e;
+      font-size: 85%;
+    }
+    pre code { background: none; color: inherit; padding: 0; font-size: 100%; }
 
-      /* Headings */
-      h1 { color: #0f3460; border-bottom: 2px solid #0f3460; padding-bottom: 8px; }
-      h2 { color: #1a1a2e; border-bottom: 1px solid #e1e4e8; padding-bottom: 6px; margin-top: 32px; }
-      h3 { color: #16213e; margin-top: 24px; }
+    /* ── Blockquote / Note ── */
+    blockquote {
+      margin: 16px 0;
+      padding: 12px 16px;
+      background: #ddf4ff;
+      border-left: 4px solid #0969da;
+      border-radius: 0 6px 6px 0;
+      color: #24292f;
+    }
+    blockquote p { margin: 0; font-size: 14px; }
 
-      /* Callout boxes */
-      blockquote {
-        background: #e8f4f8;
-        border-left: 4px solid #0f3460;
-        margin: 16px 0;
-        padding: 12px 16px;
-        border-radius: 0 6px 6px 0;
-        color: #24292e;
-      }
+    /* ── Module Card Grid ── */
+    .module-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 12px;
+      margin: 20px 0;
+    }
+    .module-card {
+      border: 1px solid #d0d7de;
+      border-radius: 8px;
+      padding: 16px;
+      background: #ffffff;
+      transition: box-shadow 0.2s, border-color 0.2s;
+      cursor: pointer;
+    }
+    .module-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-color: #0969da;
+    }
+    .module-card a {
+      font-weight: 600;
+      font-size: 14px;
+      color: #0969da;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .module-card p {
+      font-size: 12px;
+      color: #57606a;
+      margin: 0;
+    }
+    .module-card .num { font-size: 1.6em; margin-bottom: 8px; }
 
-      /* Footer */
-      #footer_wrap { background: #1a1a2e; }
-      #footer_wrap .inner { color: #aaa; font-size: 0.8em; padding: 16px 0; }
-      #footer_wrap a { color: #7eb8e0; }
+    /* ── Badges ── */
+    .badges { margin: 12px 0 20px; }
+    .badges img { margin: 0 4px 6px 0; vertical-align: middle; }
 
-      /* Badges row on homepage */
-      .badges img { margin: 0 4px 8px; vertical-align: middle; }
+    /* ── Hero Banner ── */
+    .hero {
+      background: linear-gradient(135deg, #0969da 0%, #0550ae 100%);
+      border-radius: 10px;
+      padding: 32px 36px;
+      margin-bottom: 32px;
+      color: white;
+    }
+    .hero h1 {
+      color: white;
+      border: none;
+      font-size: 1.8em;
+      margin: 0 0 8px;
+      padding: 0;
+    }
+    .hero p { color: rgba(255,255,255,0.85); margin: 0 0 20px; font-size: 1.05em; }
+    .btn {
+      display: inline-block;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      text-decoration: none;
+      margin-right: 8px;
+      transition: opacity 0.15s;
+    }
+    .btn:hover { opacity: 0.85; text-decoration: none; }
+    .btn-primary { background: #ffffff; color: #0969da; }
+    .btn-secondary { background: rgba(255,255,255,0.15); color: white; border: 1px solid rgba(255,255,255,0.4); }
 
-      /* Module card grid */
-      .module-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin: 16px 0; }
-      .module-card {
-        border: 1px solid #e1e4e8;
-        border-radius: 8px;
-        padding: 14px;
-        background: #fff;
-        transition: box-shadow 0.2s, transform 0.2s;
-      }
-      .module-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.12); transform: translateY(-2px); }
-      .module-card a { text-decoration: none; color: #0f3460; font-weight: 600; font-size: 0.9em; }
-      .module-card p { font-size: 0.8em; color: #586069; margin: 4px 0 0; }
-      .module-num { font-size: 1.4em; margin-bottom: 6px; }
-    </style>
-  </head>
+    /* ── Footer ── */
+    .site-footer {
+      border-top: 1px solid #d0d7de;
+      padding: 24px 48px;
+      font-size: 13px;
+      color: #57606a;
+      margin-left: 260px;
+    }
+    .site-footer a { color: #0969da; }
 
-  <body>
-    <div id="header_wrap" class="outer">
-      <header class="inner">
-        <a id="forkme_banner" href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}">View on GitHub</a>
-        <h1 id="project_title">🚀 {{ site.title }}</h1>
-        <h2 id="project_tagline">{{ site.description }}</h2>
-      </header>
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .sidebar { display: none; }
+      .main-content { padding: 20px 16px; }
+      .site-footer { margin-left: 0; }
+      .hero { padding: 20px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <header class="site-header">
+    <a class="logo" href="{{ '/' | relative_url }}">
+      <svg height="22" viewBox="0 0 16 16" width="22"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      AI Course for College Students
+    </a>
+    <div class="header-links">
+      <a href="{{ '/setup/' | relative_url }}">Setup</a>
+      <a href="{{ '/glossary/' | relative_url }}">Glossary</a>
+      <a href="https://github.com/{{ site.github_username }}/{{ site.github_repo }}" target="_blank">GitHub ↗</a>
     </div>
+  </header>
 
-    <div id="sidebar">
+  <div class="page-wrapper">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
       {% include nav.html %}
-    </div>
+    </aside>
 
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        {{ content }}
-      </section>
-    </div>
+    <!-- Main Content -->
+    <main class="main-content">
+      {{ content }}
+    </main>
 
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>AI Course for College Students &copy; 2026 <a href="https://github.com/{{ site.github_username }}">{{ site.author }}</a> &mdash; MIT License</p>
-      </footer>
-    </div>
-  </body>
+  </div>
+
+  <footer class="site-footer">
+    <p>AI Course for College Students &copy; 2026 <a href="https://github.com/{{ site.github_username }}">{{ site.author }}</a> &mdash; Released under the <a href="{{ '/LICENSE' | relative_url }}">MIT License</a></p>
+  </footer>
+
+</body>
 </html>
