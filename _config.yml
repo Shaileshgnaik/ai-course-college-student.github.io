@@ -1,0 +1,39 @@
+title: "AI Course for College Students"
+description: "A hands-on AI course covering Generative AI, Prompt Engineering, Microsoft Copilot, and more — designed for college students across all disciplines."
+url: "https://shaileshgnaik.github.io"
+baseurl: "/ai-course-college-student.github.io"
+
+author: "Shailesh G Naik"
+email: ""
+github_username: Shaileshgnaik
+
+theme: jekyll-theme-cayman
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-titles-from-headings
+
+# Treat all .md files as pages
+include:
+  - "*.md"
+  - "modules/**/*.md"
+  - "labs/**/*.md"
+  - "projects/**/*.md"
+  - "assessments/**/*.md"
+  - "resources/**/*.md"
+
+exclude:
+  - "*.gitkeep"
+  - ".git"
+  - "node_modules"
+  - "vendor"
