@@ -13,7 +13,10 @@
 10. AI Careers
 
 ## Repository Structure
-- modules/
-- labs/
-- projects/
-- resources/
+```
+ai-course-college-student.github.io/
+├── modules/       # Course module content (10 modules)
+├── labs/          # Hands-on lab exercises
+├── projects/      # Student project templates and examples
+└── resources/     # Additional reading, links, and references
+```
